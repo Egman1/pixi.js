@@ -16,8 +16,8 @@ export function mapWebGLBlendModesToPixi(gl: WebGLRenderingContextBase, array: n
     // add a boolean for that!
     array[BLEND_MODES.NORMAL] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
     array[BLEND_MODES.ADD] = [gl.ONE, gl.ONE];
-    array[BLEND_MODES.MULTIPLY] = [gl.DST_COLOR, gl.ONE_MINUS_SRC_ALPHA, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
-    array[BLEND_MODES.SCREEN] = [gl.ONE, gl.ONE_MINUS_SRC_COLOR, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.MULTIPLY] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.SCREEN] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
     array[BLEND_MODES.OVERLAY] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
     array[BLEND_MODES.DARKEN] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
     array[BLEND_MODES.LIGHTEN] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
@@ -31,7 +31,17 @@ export function mapWebGLBlendModesToPixi(gl: WebGLRenderingContextBase, array: n
     array[BLEND_MODES.SATURATION] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
     array[BLEND_MODES.COLOR] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
     array[BLEND_MODES.LUMINOSITY] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
-    array[BLEND_MODES.NONE] = [0, 0];
+    array[BLEND_MODES.NONE] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.LINEAR_BURN] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.DARKER_COLOR] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.LINEAR_DODGE] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.LIGHTER_COLOR] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.VIVID_LIGHT] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.LINEAR_LIGHT] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.PIN_LIGHT] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.HARD_MIX] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.DIVIDE] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
+    array[BLEND_MODES.NONE_2] = [gl.ONE, gl.ONE_MINUS_SRC_ALPHA];
 
     // not-premultiplied blend modes
     array[BLEND_MODES.NORMAL_NPM] = [gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA, gl.ONE, gl.ONE_MINUS_SRC_ALPHA];

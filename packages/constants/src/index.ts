@@ -80,6 +80,16 @@ export enum BUFFER_BITS {
  * @property {number} ADD_NPM
  * @property {number} SCREEN_NPM
  * @property {number} NONE
+ * @property {number} LINEAR_BURN
+ * @property {number} DARKER_COLOR
+ * @property {number} LINEAR_DODGE
+ * @property {number} LIGHTER_COLOR
+ * @property {number} VIVID_LIGHT
+ * @property {number} LINEAR_LIGHT
+ * @property {number} PIN_LIGHT
+ * @property {number} HARD_MIX
+ * @property {number} DIVIDE
+ * @property {number} NONE_2
  * @property {number} SRC_IN
  * @property {number} SRC_OUT
  * @property {number} SRC_ATOP
@@ -114,18 +124,28 @@ export enum BLEND_MODES {
     ADD_NPM = 18,
     SCREEN_NPM = 19,
     NONE = 20,
+    LINEAR_BURN = 21,
+    DARKER_COLOR = 22,
+    LINEAR_DODGE = 23,
+    LIGHTER_COLOR = 24,
+    VIVID_LIGHT = 25,
+    LINEAR_LIGHT = 26,
+    PIN_LIGHT = 27,
+    HARD_MIX = 28,
+    DIVIDE = 29,
+    NONE_2 = 30,
 
     SRC_OVER = 0,
-    SRC_IN = 21,
-    SRC_OUT = 22,
-    SRC_ATOP = 23,
-    DST_OVER = 24,
-    DST_IN = 25,
-    DST_OUT = 26,
-    DST_ATOP = 27,
-    ERASE = 26,
-    SUBTRACT = 28,
-    XOR = 29,
+    SRC_IN = 31,
+    SRC_OUT = 32,
+    SRC_ATOP = 33,
+    DST_OVER = 34,
+    DST_IN = 35,
+    DST_OUT = 36,
+    DST_ATOP = 37,
+    ERASE = 36,
+    SUBTRACT = 38,
+    XOR = 39,
 }
 
 /**

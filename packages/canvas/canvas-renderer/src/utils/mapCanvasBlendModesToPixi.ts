@@ -31,6 +31,15 @@ export function mapCanvasBlendModesToPixi(array: string[] = []): string[]
         array[BLEND_MODES.SATURATION] = 'saturate';
         array[BLEND_MODES.COLOR] = 'color';
         array[BLEND_MODES.LUMINOSITY] = 'luminosity';
+        array[BLEND_MODES.LINEAR_BURN] = 'linear-burn';
+        array[BLEND_MODES.DARKER_COLOR] = 'darker-color';
+        array[BLEND_MODES.LINEAR_DODGE] = 'linear-dodge';
+        array[BLEND_MODES.LIGHTER_COLOR] = 'lighter-color';
+        array[BLEND_MODES.VIVID_LIGHT] = 'vivid-light';
+        array[BLEND_MODES.LINEAR_LIGHT] = 'linear-light';
+        array[BLEND_MODES.PIN_LIGHT] = 'pin-light';
+        array[BLEND_MODES.HARD_MIX] = 'hard-mix';
+        array[BLEND_MODES.DIVIDE] = 'divide';
     }
     else
     {
@@ -52,6 +61,15 @@ export function mapCanvasBlendModesToPixi(array: string[] = []): string[]
         array[BLEND_MODES.SATURATION] = 'source-over';
         array[BLEND_MODES.COLOR] = 'source-over';
         array[BLEND_MODES.LUMINOSITY] = 'source-over';
+        array[BLEND_MODES.LINEAR_BURN] = 'source-over';
+        array[BLEND_MODES.DARKER_COLOR] = 'source-over';
+        array[BLEND_MODES.LINEAR_DODGE] = 'source-over';
+        array[BLEND_MODES.LIGHTER_COLOR] = 'source-over';
+        array[BLEND_MODES.VIVID_LIGHT] = 'source-over';
+        array[BLEND_MODES.LINEAR_LIGHT] = 'source-over';
+        array[BLEND_MODES.PIN_LIGHT] = 'source-over';
+        array[BLEND_MODES.HARD_MIX] = 'source-over';
+        array[BLEND_MODES.DIVIDE] = 'source-over';
     }
     // not-premultiplied, only for webgl
     array[BLEND_MODES.NORMAL_NPM] = array[BLEND_MODES.NORMAL];
