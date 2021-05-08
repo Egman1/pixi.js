@@ -13,7 +13,7 @@ function mapPremultipliedBlendModes(): number[][]
     const pm = [];
     const npm = [];
 
-    for (let i = 0; i < 32; i++)
+    for (let i = 0; i < 50; i++)
     {
         pm[i] = i;
         npm[i] = i;
