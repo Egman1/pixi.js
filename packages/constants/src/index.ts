@@ -135,7 +135,7 @@ export enum BLEND_MODES {
     DIVIDE = 29,
     NONE_2 = 30,
 
-    SRC_OVER = 0,
+    SRC_OVER = 40,
     SRC_IN = 31,
     SRC_OUT = 32,
     SRC_ATOP = 33,
