@@ -1,6 +1,6 @@
 {
-  "name": "pixi.js",
-  "version": "5.3.8",
+  "name": "@egman1/pixi.js",
+  "version": "5.3.9",
   "description": "PixiJS without the CanvasRenderer fallback, modern browsers only",
   "author": "Mat Groves",
   "contributors": [
@@ -18,12 +18,10 @@
     "name": "PIXI"
   },
   "types": "pixi.js.d.ts",
-  "homepage": "http://www.pixijs.com/",
-  "bugs": "https://github.com/pixijs/pixi.js/issues",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixijs/pixi.js.git"
+    "url": "https://github.com/Egman1/pixi.js.git"
   },
   "scripts": {
     "test": "floss --path test"
